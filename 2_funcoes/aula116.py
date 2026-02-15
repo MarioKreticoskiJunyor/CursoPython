@@ -1,4 +1,7 @@
-# Criando arquivos com Python + Context Manager with
+import os
+
+# Leia também: https://www.otaviomiranda.com.br/2020/normalizacao-unicode-em-python/
+# with open (context manager) e métodos úteis do TextIOWrapper
 # Usamos a função open para abrir
 # um arquivo em Python (ele pode ou não existir)
 # Modos:
@@ -18,13 +21,17 @@
 # Vamos falar mais sobre o módulo json, mas:
 # json.dump = Gera um arquivo json
 # json.load
-caminho_arquivo = 'G:\\Meu Drive\\Cursos\\Curso Python\\'
-caminho_arquivo += 'aula116.txt'
+caminho_arquivo = 'G:\\Meu Drive\\Cursos\\Curso Python\\2_funcoes\\'
+caminho_arquivo += 'Aula116.txt'
 
 # arquivo = open(caminho_arquivo, 'w')
 # arquivo.close()
+# with open(caminho_arquivo,'r') as arquivo:
+#     print(arquivo.read())
+#     print('Arquivo vai ser fechado')
 
-with open(caminho_arquivo,'w') as arquivo:
+with open(caminho_arquivo,'w', encoding='utf8') as arquivo:
+    arquivo.write('Atenção\n')
     arquivo.write('Linha1\n')
     arquivo.write('Linha1\n')
     arquivo.writelines(
@@ -32,7 +39,6 @@ with open(caminho_arquivo,'w') as arquivo:
     )
     print('Arquivo vai ser fechado')
 
-with open(caminho_arquivo,'r') as arquivo:
-    print(arquivo.read())
-    print('Arquivo vai ser fechado')
+# os.remove(caminho_arquivo)
+os.rename(caminho_arquivo, 'Aula116.txt')
 

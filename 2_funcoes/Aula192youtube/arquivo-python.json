@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Luiz",
+    "lastname": "Miranda",
+    "age": 22,
+    "addresses": [
+      {
+        "Line1": "Av.brasik"
+      },
+      {
+        "Line1": "Av.amapa"
+      }
+    ]
+  },
+  {
+    "name": "Mario",
+    "lastname": "Miranda",
+    "age": 22,
+    "addresses": [
+      {
+        "Line1": "Av.brasik"
+      },
+      {
+        "Line1": "Av.amapa"
+      }
+    ]
+  }
+]
