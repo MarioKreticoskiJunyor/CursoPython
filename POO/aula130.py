@@ -12,6 +12,7 @@ class Connection:
     def set_user(self, user):
         #setter
         self.user = user
+        
     def set_password(self, password):
         #setter
         self.password = password
